@@ -1,0 +1,31 @@
+# Locked specification for DILI hierarchical analysis
+# This file controls all fixed parameters for the project
+
+project:
+  name: "immunosuppressants_DILI"
+  version: "v1"
+
+duckdb:
+  threads: 8
+  memory_limit: "22GB"
+  temp_directory: "99_shared/tmp_duckdb"
+
+targets:
+  soc_target: "Hepatobiliary disorders"
+  plot_min_cases: 20
+
+inputs:
+  faers_master_path: "D:/FAERS/MASTER/FAERS_MASTER_FILE_2004-2024_with_serious.parquet"
+  meddra_map_path: ""
+
+columns:
+  faers:
+    case_id: "caseid"
+    report_id: "primaryid"
+    role_cod: "role_cod"
+    drugname: "drugname"
+    ae_pt: "pt_norm"
+    soc_name: "soc_name"
+    hlgt_name: "hlgt_name"
+    hlt_name: "hlt_name"
+    pt_name: "pt_name"

@@ -1,0 +1,17 @@
+# R
+.Rhistory
+.RData
+.Rproj.user
+
+# Outputs & temp
+**/outputs/**
+**/tmp_duckdb/**
+**/logs/**
+**/.DS_Store
+
+# Large data (adjust if you want to track)
+*.parquet
+*.duckdb
+*.sqlite
+*.csv.gz
+_RESCUE_SNAPSHOT/

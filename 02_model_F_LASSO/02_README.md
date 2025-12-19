@@ -1,5 +1,12 @@
 # Penalized Regression (LASSO)
 
+# 02_model_F_LASSO — Baseline penalized model
+
+This module contains the initial full LASSO (glmnet) analyses performed
+to assess whether immunosuppressant classes remain independently associated
+with DILI after adjustment for sex and age.  
+It serves as an exploratory baseline and historical reference, not the final predictive model.
+
 This module performs multivariable penalized logistic regression to assess
 **independent risk factors** for immunosuppressant-associated DILI.
 

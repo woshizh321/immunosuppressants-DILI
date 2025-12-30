@@ -1,17 +1,86 @@
-# R
+############################
+# 1. OS / IDE / RStudio
+############################
 .Rhistory
 .RData
-.Rproj.user
+.Rproj.user/
+*.Rproj
 
-# Outputs & temp
-**/outputs/**
-**/tmp_duckdb/**
-**/logs/**
-**/.DS_Store
+.DS_Store
+Thumbs.db
 
-# Large data (adjust if you want to track)
+############################
+# 2. Temporary / cache files
+############################
+*.tmp
+*.log
+*.bak
+*.swp
+*~
+
+############################
+# 3. Large raw data (not tracked)
+############################
 *.parquet
+*.fst
 *.duckdb
 *.sqlite
-*.csv.gz
+*.rds
+
+# 如果你希望：模型对象也不进 Git（可选）
+# 取消注释即可
+# */outputs/model/*.rds
+
+############################
+# 4. Figures / tables auto-generated
+############################
+*/outputs/figures/
+*/outputs/plots/
+*/outputs/tables/
+
+############################
+# 5. Rescue & QC snapshots
+############################
 _RESCUE_SNAPSHOT/
+_QC_DIRS.txt
+_QC_FILES_KEY.txt
+
+############################
+# 6. System-specific
+############################
+*.exe
+*.dll
+
+# ===== Data / databases (do NOT commit) =====
+*.parquet
+*.csv
+*.tsv
+*.xlsx
+*.rds
+*.qs
+*.duckdb
+*.sqlite
+*.db
+
+# ===== Outputs / figures / derived =====
+**/outputs/
+**/derived/
+**/QC_outputs*/
+**/model_outputs*/
+**/model_outputs_fast*/
+10_figures/
+figures/
+**/*.png
+**/*.pdf
+
+# ===== Temp / cache =====
+99_shared/tmp_duckdb/
+tmp/
+temp/
+
+# ===== R / IDE =====
+.Rhistory
+.RData
+.Rproj.user/
+.vscode/
+

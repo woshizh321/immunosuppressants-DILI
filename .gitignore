@@ -84,3 +84,37 @@ temp/
 .Rproj.user/
 .vscode/
 
+
+# ===== Data / databases (do NOT commit) =====
+*.parquet
+*.csv
+*.tsv
+*.xlsx
+*.rds
+*.qs
+*.duckdb
+*.sqlite
+*.db
+
+# ===== Outputs / figures / derived =====
+**/outputs/
+**/derived/
+**/QC_outputs*/
+**/model_outputs*/
+**/model_outputs_fast*/
+10_figures/
+figures/
+**/*.png
+**/*.pdf
+
+# ===== Temp / cache =====
+99_shared/tmp_duckdb/
+tmp/
+temp/
+
+# ===== R / IDE =====
+.Rhistory
+.RData
+.Rproj.user/
+.vscode/
+
